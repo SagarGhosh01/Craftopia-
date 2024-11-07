@@ -1,0 +1,41 @@
+*I{
+    box-sizing:border-box;
+    font-family:'poppins', sans-serif;
+
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    
+}
+.form1{
+    height:500px;
+     width:400px;
+     gap:20px;
+     display:grid;
+     background-color: transparent;
+     padding: 0 35px;
+     padding-bottom: 35px;
+     border:2px solid black;
+     box-shadow: 20px 5px 25px  black;
+     border-radius:9px;
+}
+input{
+    width:100%;
+    padding:12px;
+}
+.btn{
+    color:whitesmoke;
+    background-color: green;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+
+}

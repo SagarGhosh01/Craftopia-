@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Email</title>
+    <link rel="stylesheet" href="loginem.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <script>
+        function data(){
+            var a=document.getElementById('phone').value;
+            var b=document.getElementById('email1').value;
+            if(a.length==10){
+                alert("Welcome To Craftopia..");
+                return true;
+            }
+            else if(a.length<10 || a.length>10)
+            {
+                alert("Number should be of 10 digit!");
+                return false;
+            }
+            else if(isNaN(a)){
+                alert("Only Numbers and emails allowed!");
+                return false;
+            }
+            
+        }
+    </script>
+
+     
+     <div class="form1" >
+
+        <h1>Login In</h1>
+        
+        <form onsubmit="return data()" action="index.html">
+            <input type="tel" id="phone" placeholder="Enter your phone number..." style="height:15px; width:300px;" ><br>
+            <h3>OR</h3>
+            <input type="email" id="email1" placeholder="Enter your Email... " style="height:20px; width:300px; "><br><br><br>
+    
+        <button class="btn" style="height:50px; width:80px; ">Verify</button>
+        </form>
+        
+           
+         
+         
+
+     </div>
+     
+     
+     
+    
+</body>
+</html>
